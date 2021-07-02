@@ -1,0 +1,285 @@
+.state_container {
+  width: 100vw;
+  height: 4624px;
+  margin-top: 0px;
+  background-color: #161625;
+}
+
+.container_card {
+  padding-top: 100px;
+  margin-left: 150px;
+  margin-right: 150px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.state_Heading {
+  font-family: roboto;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 48px;
+  color: #0ea5e9;
+  background: rgba(2, 132, 199, 0.16);
+  border-radius: 32px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.lastUpdateDate {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #cbd5e1;
+}
+.container_total_result {
+  padding-top: 20px;
+}
+.tested {
+  text-align: right;
+  font-family: Roboto;
+  height: 10px;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #94a3b8;
+}
+.total_tested {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #94a3b8;
+}
+
+.present_status_container {
+  margin-top: 112px;
+  margin-left: 150px;
+  display: flex;
+  flex-direction: row;
+}
+
+.present_1 {
+  display: flex;
+  flex-direction: column;
+  width: 264px;
+  height: 232px;
+  align-items: center;
+  border-radius: 12px;
+}
+
+.status_container {
+  display: flex;
+  flex-direction: row;
+}
+
+.confirmed_heading1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #ff073a;
+}
+.active_heading1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #007bff;
+}
+.recovered_heading1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #28a745;
+}
+.deseased_heading1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  color: #6c757d;
+}
+
+.confirmed_img {
+  width: 38px;
+  height: 38px;
+}
+
+.status_1 {
+  margin-right: 30px;
+  justify-content: center;
+}
+.status_2 {
+  margin-right: 30px;
+  justify-content: center;
+}
+.status_3 {
+  margin-right: 30px;
+  justify-content: center;
+}
+.status_4 {
+  margin-right: 30px;
+  justify-content: center;
+}
+
+.status_1:hover {
+  background-color: #331427;
+}
+.status_2:hover {
+  background-color: #132240;
+}
+.status_3:hover {
+  background-color: #182829;
+}
+.status_4:hover {
+  background-color: #212230;
+}
+
+.top-district-container {
+  margin-left: 150px;
+}
+.top-district-heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 48px;
+  color: #ff073a;
+}
+.top-districts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.each-district {
+  display: flex;
+  width: 202px;
+  align-items: center;
+  margin-right: 70px;
+}
+.top-district-data {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  color: #94a3b8;
+  margin-right: 16px;
+}
+.top-district-district {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #94a3b8;
+}
+@media (max-width: 799px) {
+  .container_card {
+    padding-top: 80px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  .container_total_result {
+    margin-top: 0px;
+  }
+  .latest-update-container {
+    margin-top: 20px;
+  }
+  .state_Heading {
+    font-family: roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #0ea5e9;
+    background: rgba(2, 132, 199, 0.16);
+    border-radius: 16px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .lastUpdateDate {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .tested {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  .total_tested {
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .present_status_container {
+    margin-top: 48px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  .present_1 {
+    display: flex;
+    flex-direction: column;
+    width: 148px;
+    height: 148px;
+    align-items: center;
+    border-radius: 8px;
+  }
+  .status_2 {
+    margin-right: 0px;
+  }
+  .status_1 {
+    margin-right: 35px;
+  }
+  .status_3 {
+    margin-right: 35px;
+  }
+  .container1 {
+    margin-bottom: 16px;
+  }
+  .top-district-container {
+    margin-left: 24px;
+  }
+  .top-district-heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #ff073a;
+  }
+  .each-district {
+    display: flex;
+    width: 149px;
+    align-items: center;
+    margin-right: 20px;
+  }
+  .top-district-data {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #94a3b8;
+  }
+  .top-district-district {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #94a3b8;
+  }
+}

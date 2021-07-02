@@ -1,0 +1,169 @@
+.about_container {
+  padding-top: 146px;
+  padding-left: 150px;
+  padding-right: 150px;
+  background-color: #161625;
+  height: 1531px;
+}
+.about_heading {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 48px;
+  line-height: 64px;
+  color: #f8fafc;
+}
+.about_para {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 24px;
+  color: #94a3b8;
+}
+.about_vaccination {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 36px;
+  color: #e2e8f0;
+}
+
+.question {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #94a3b8;
+}
+
+.answer {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 32px;
+  color: #007bff;
+}
+
+.footer_section1 {
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.covid19_logo2 {
+  width: 170px;
+  height: 25px;
+}
+.footer_para1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  text-align: center;
+  color: #94a3b8;
+}
+.footer_section_logos1 {
+  margin-top: 30px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.github_logo {
+  width: 42px;
+  height: 46.11px;
+}
+.insta_logo {
+  width: 47px;
+  height: 47px;
+}
+.twitter_logo {
+  width: 48.67px;
+  height: 39.67px;
+}
+@media (max-width: 799px) {
+  .about_container {
+    padding-top: 88px;
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 1300px;
+  }
+  .about_heading {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 32px;
+    color: #f8fafc;
+  }
+  .about_para {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #94a3b8;
+  }
+  .about_vaccination {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #e2e8f0;
+  }
+  .question {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #94a3b8;
+  }
+  .answer {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 24px;
+    color: #007bff;
+  }
+  .footer_section1 {
+    margin-top: 52px;
+    margin-left: 24px;
+    margin-bottom: 48px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_para1 {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .covid19_logo2 {
+    width: 115px;
+    height: 20px;
+  }
+  .footer_section_logos1 {
+    margin-top: 13px;
+    width: 200px;
+  }
+  .github_logo {
+    width: 31px;
+    height: 34px;
+  }
+  .insta_logo {
+    width: 31px;
+    height: 31px;
+  }
+  .twitter_logo {
+    width: 29.8px;
+    height: 24.8px;
+  }
+}

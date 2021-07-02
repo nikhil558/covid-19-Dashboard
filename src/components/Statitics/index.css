@@ -1,0 +1,251 @@
+.icon1_state {
+  background-color: #94a3b8;
+  height: 20px;
+  width: 20px;
+  margin-left: 16px;
+  margin-top: 10px;
+}
+
+.icon2_state {
+  background-color: #94a3b8;
+  height: 20px;
+  width: 20px;
+  margin-left: 12px;
+  margin-top: 10px;
+}
+
+.statics_states_container {
+  width: 1146px;
+  margin-left: 150px;
+  margin-top: 60px;
+  background-color: #1e1e30;
+  border: 1px solid #475569;
+  box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+  border-radius: 12px;
+}
+.statics_states_headings {
+  padding-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  padding-bottom: 13px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.state_ui {
+  display: flex;
+  flex-direction: row;
+}
+.heading_states {
+  width: 73px;
+  height: 24px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f8fafc;
+}
+
+.horizontal_line {
+  width: 1146px;
+  height: 0px;
+  border: 1px solid #475569;
+}
+
+.each_state_container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 32px;
+}
+
+.unorder_list {
+  list-style-type: none;
+}
+
+.statePara1 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  width: 135px;
+  line-height: 24px;
+  color: #f1f5f9;
+}
+
+.statePara2 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100px;
+  color: #ff073a;
+}
+.statePara3 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100px;
+  color: #007bff;
+}
+.statePara4 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100px;
+  color: #28a745;
+}
+.statePara5 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  width: 100px;
+  color: #6c757d;
+}
+.statePara6 {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 24px;
+  color: #94a3b8;
+}
+
+.footer_section {
+  margin-top: 120px;
+  margin-left: 546px;
+  margin-bottom: 96px;
+  margin-right: 546px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.covid19_logo2 {
+  width: 170px;
+  height: 25px;
+}
+.footer_para {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #94a3b8;
+  margin-top: 24px;
+}
+.footer_section_logos {
+  margin-top: 35px;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.github_logo {
+  width: 42px;
+  height: 46.11px;
+}
+.insta_logo {
+  width: 47px;
+  height: 47px;
+}
+.twitter_logo {
+  width: 48.67px;
+  height: 39.67px;
+}
+.confirmed_stats {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #ff073a;
+}
+.active_stats {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #007bff;
+}
+.recovered_stats {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #28a745;
+}
+.deceased_stats {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 24px;
+  color: #6c757d;
+}
+@media (max-width: 799px) {
+  .container_present {
+    overflow: scroll;
+  }
+  .statics_states_container {
+    width: 839px;
+    height: 2079px;
+    margin-left: 24px;
+    margin-top: 48px;
+    background: #1e1e30;
+    border: 1px solid #475569;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 12px;
+  }
+  .horizontal_line {
+    width: 839px;
+    height: 0px;
+    border: 1px solid #475569;
+  }
+
+  .container1 {
+    margin-bottom: 48px;
+  }
+  .footer_section {
+    margin-top: 52px;
+    margin-left: 24px;
+    margin-bottom: 48px;
+    margin-right: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer_para {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .covid19_logo2 {
+    width: 115px;
+    height: 20px;
+  }
+  .footer_section_logos {
+    margin-top: 16px;
+    width: 200px;
+  }
+  .github_logo {
+    width: 31px;
+    height: 34px;
+  }
+  .insta_logo {
+    width: 31px;
+    height: 31px;
+  }
+  .twitter_logo {
+    width: 29.8px;
+    height: 24.8px;
+  }
+}
