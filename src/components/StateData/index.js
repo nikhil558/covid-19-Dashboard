@@ -161,6 +161,7 @@ class StateData extends Component {
     barChatData: [],
     eachBarChat: [],
     showing: false,
+    totalStateData1: [],
   }
 
   componentDidMount() {
@@ -183,6 +184,18 @@ class StateData extends Component {
     const data1 = fetchedData[obj1[0].state_code]
     const {districts} = await data1
     const districts1 = Object.keys(districts)
+    const {meta} = data1
+    const totalStateData = {
+      stateName: state,
+      confirmed: data1.total.confirmed,
+      active:
+        data1.total.confirmed - data1.total.recovered - data1.total.deceased,
+      tested: data1.total.tested,
+      recovered: data1.total.recovered,
+      deceased: data1.total.deceased,
+      population: data1.meta.population,
+      lastUpdate: meta.tested.date,
+    }
 
     const confirmedData = districts1.map(each => {
       const {total} = districts[each]
@@ -226,6 +239,7 @@ class StateData extends Component {
       recovered: recoveryData,
       deseased: deseasedData,
       topDistricts: confirmedData,
+      totalStateData1: totalStateData,
     })
   }
 
@@ -265,7 +279,6 @@ class StateData extends Component {
     )
     threeMonths.shift()
     threeMonths.shift()
-    threeMonths.reverse()
 
     tenDays.shift()
     tenDays.reverse()
@@ -346,7 +359,13 @@ class StateData extends Component {
   }
 
   render() {
-    const {topDistricts, eachBarChat, showing} = this.state
+    const {
+      topDistricts,
+      eachBarChat,
+      showing,
+      spreadTreads,
+      totalStateData1,
+    } = this.state
     const {match} = this.props
     const {params} = match
     const {state} = params
@@ -357,11 +376,15 @@ class StateData extends Component {
         <div className="container_card">
           <div className="latest-update-container">
             <h1 className="state_Heading">{state}</h1>
-            <p className="lastUpdateDate">Last updated on date</p>
+            <p className="lastUpdateDate">
+              Last updated on {totalStateData1.lastUpdate}
+            </p>
           </div>
           <div className="container_total_result">
             <p className="tested">Tested</p>
-            <p className="total_tested">2,02,39,490</p>
+            <p className="total_tested">
+              {Intl.NumberFormat('en-IN').format(totalStateData1.tested)}
+            </p>
           </div>
         </div>
         <div className="present_status_container">
@@ -377,7 +400,7 @@ class StateData extends Component {
                 onClick={this.confirmClicked}
               />
               <h1 className="confirmed_stats" onClick={this.confirmClicked}>
-                2,02,39,490
+                {Intl.NumberFormat('en-IN').format(totalStateData1.confirmed)}
               </h1>
             </div>
             <div className="present_1 status_2">
@@ -391,7 +414,7 @@ class StateData extends Component {
                 onClick={this.activeClick}
               />
               <h1 className="active_stats" onClick={this.activeClick}>
-                2,02,39,490
+                {Intl.NumberFormat('en-IN').format(totalStateData1.active)}
               </h1>
             </div>
           </div>
@@ -407,7 +430,7 @@ class StateData extends Component {
                 onClick={this.recoveryClick}
               />
               <h1 className="recovered_stats" onClick={this.recoveryClick}>
-                2,02,39,490
+                {Intl.NumberFormat('en-IN').format(totalStateData1.recovered)}
               </h1>
             </div>
             <div className="present_1 status_4">
@@ -421,7 +444,7 @@ class StateData extends Component {
                 onClick={this.deseasedClick}
               />
               <h1 className="deceased_stats" onClick={this.deseasedClick}>
-                2,02,39,490
+                {Intl.NumberFormat('en-IN').format(totalStateData1.deceased)}
               </h1>
             </div>
           </div>
@@ -437,7 +460,34 @@ class StateData extends Component {
             ))}
           </div>
         </div>
-        {showing && <Barchat eachBarChat={eachBarChat} />}
+        {showing && <Barchat spreadTreads={spreadTreads} />}
+        <div className="footer_section1">
+          <img
+            src="https://res.cloudinary.com/dsqwm3c9a/image/upload/v1624017239/COVID19INDIA_yojxlk.png"
+            alt="covid19_logo2"
+            className="covid19_logo2"
+          />
+          <p className="footer_para1">
+            we stand with everyone fighting on the front lines
+          </p>
+          <div className="footer_section_logos1">
+            <img
+              src="https://res.cloudinary.com/dsqwm3c9a/image/upload/v1624171954/Vector_2_rzepam.png"
+              alt="github_logo"
+              className="github_logo"
+            />
+            <img
+              src="https://res.cloudinary.com/dsqwm3c9a/image/upload/v1624171795/instagram_v3s3tq.png"
+              alt="insta_logo"
+              className="insta_logo"
+            />
+            <img
+              src="https://res.cloudinary.com/dsqwm3c9a/image/upload/v1624171908/path3611_zkrjfo.png"
+              alt="twitter_logo"
+              className="twitter_logo"
+            />
+          </div>
+        </div>
       </div>
     )
   }

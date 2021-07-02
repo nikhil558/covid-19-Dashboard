@@ -26,7 +26,7 @@ class Statitics extends Component {
       return {
         stateName: each.state_name,
         confirmed: total.confirmed,
-        active: total.tested,
+        active: total.confirmed - total.recovered - total.deceased,
         recovered: total.recovered,
         deceased: total.deceased,
         population: meta.population,
@@ -55,7 +55,9 @@ class Statitics extends Component {
                 alt="confirm_img"
                 className="confirmed_img"
               />
-              <h1 className="confirmed_stats">{confirmed}</h1>
+              <h1 className="confirmed_stats">
+                {Intl.NumberFormat('en-IN').format(confirmed)}
+              </h1>
             </div>
             <div className="present_1 status_2">
               <h1 className="active_heading1">Active</h1>
@@ -64,7 +66,9 @@ class Statitics extends Component {
                 alt="active_img"
                 className="confirmed_img"
               />
-              <h1 className="active_stats">{active}</h1>
+              <h1 className="active_stats">
+                {Intl.NumberFormat('en-IN').format(active)}
+              </h1>
             </div>
           </div>
           <div className="status_container">
@@ -75,7 +79,9 @@ class Statitics extends Component {
                 alt="recovered_img"
                 className="confirmed_img"
               />
-              <h1 className="recovered_stats">{recovered}</h1>
+              <h1 className="recovered_stats">
+                {Intl.NumberFormat('en-IN').format(recovered)}
+              </h1>
             </div>
             <div className="present_1 status_4">
               <h1 className="deseased_heading1">Deseased</h1>
@@ -84,7 +90,9 @@ class Statitics extends Component {
                 alt="deceased_img"
                 className="confirmed_img"
               />
-              <h1 className="deceased_stats">{deceased}</h1>
+              <h1 className="deceased_stats">
+                {Intl.NumberFormat('en-IN').format(deceased)}
+              </h1>
             </div>
           </div>
         </div>
@@ -108,7 +116,7 @@ class Statitics extends Component {
               <h1 className="heading_states">Active</h1>
               <h1 className="heading_states">Recovered</h1>
               <h1 className="heading_states">Deseased</h1>
-              <h1 className="heading_states">Population</h1>
+              <h1 className="heading_states1">Population</h1>
             </div>
             <hr className="horizontal_line" />
             <ul className="unorder_list">

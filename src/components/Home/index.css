@@ -80,7 +80,7 @@
 
 @media (max-width: 799px) {
   .bg_home {
-    height: 2850px;
+    height: 2930px;
   }
   .inputSearch {
     height: 48px;
@@ -102,7 +102,86 @@
     height: 96px;
     align-items: center;
   }
-  .status_2 {
-    margin-right: 0px;
+  .confirmed_heading1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #ff073a;
+  }
+  .active_heading1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #007bff;
+  }
+  .recovered_heading1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #28a745;
+  }
+  .deseased_heading1 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    color: #6c757d;
+  }
+
+  .confirmed_img {
+    width: 24px;
+    height: 24px;
+  }
+  .confirmed_stats {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #ff073a;
+  }
+  .active_stats {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #007bff;
+  }
+  .recovered_stats {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #28a745;
+  }
+  .deceased_stats {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    color: #6c757d;
+  }
+  .present_1 {
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+  }
+  .status_container {
+    justify-content: space-around;
+  }
+  .status_4 {
+    align-items: center;
   }
 }
