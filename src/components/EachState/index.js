@@ -18,10 +18,8 @@ class EachState extends Component {
     }
 
     return (
-      <div className="each_container">
-        <p className="each_para" onClick={this.clickingFun}>
-          {data.state_name}
-        </p>
+      <li className="each_container" onClick={this.clickingFun}>
+        <p className="each_para">{data.state_name}</p>
         <div className="each_code_container">
           <p className="state_code_para">{data.state_code}</p>
           <img
@@ -30,7 +28,7 @@ class EachState extends Component {
             className="line_img"
           />
         </div>
-      </div>
+      </li>
     )
   }
 }

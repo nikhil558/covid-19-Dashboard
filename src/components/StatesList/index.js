@@ -11,11 +11,11 @@ class StatesList extends Component {
     const {clicking} = this.state
     const {filterStates} = this.props
     return (
-      <div className="search_states_container">
+      <ul className="search_states_container">
         {filterStates.map(each => (
           <EachState data={each} />
         ))}
-      </div>
+      </ul>
     )
   }
 }

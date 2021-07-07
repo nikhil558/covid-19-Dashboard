@@ -98,7 +98,7 @@ export default class Graphs extends Component {
     const {data, lineData} = this.state
 
     return (
-      <div>
+      <div className="main-container">
         <div className="bar-graph">
           <Bar
             data={data}

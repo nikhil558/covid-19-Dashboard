@@ -2,12 +2,15 @@
   padding: 5px;
   padding-top: 5px;
   border-radius: 12px;
-  width: 90%;
+  width: 100%;
   margin-bottom: 30px;
   margin-top: 10px;
   height: 100%;
-  margin-left: 200px;
-  align-self: flex-start;
+}
+.main-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 @media screen and (min-width: 768px) {
   .chart {
@@ -17,18 +20,20 @@
     width: 1146px;
     margin-bottom: 30px;
     margin-top: 30px;
-    align-self: center;
+  }
+  .main-container {
+    padding-left: 150px;
+    padding-right: 150px;
   }
 }
 .bar-graph {
   width: 80%;
   height: 100%;
-  padding-left: 150px;
-  padding-right: 150px;
 }
+
 @media screen and (min-width: 768px) {
   .bar-graph {
-    width: 100%;
+    width: 70%;
   }
 }
 .chart-conformed {
@@ -71,10 +76,7 @@
   color: #f95581;
 }
 @media (max-width: 768px) {
-  .chart {
-    margin-left: 24px;
-  }
-  .bar-graph {
+  .main-container {
     padding-left: 24px;
     padding-right: 24px;
   }

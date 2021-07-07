@@ -1,8 +1,8 @@
 .state_container {
   width: 100vw;
-  height: 3750px;
   margin-top: 0px;
   background-color: #161625;
+  padding-bottom: 150px;
 }
 
 .container_card {
@@ -186,7 +186,7 @@
 }
 @media (max-width: 799px) {
   .state_container {
-    height: 3080px;
+    padding-bottom: 24px;
   }
   .container_card {
     padding-top: 80px;
