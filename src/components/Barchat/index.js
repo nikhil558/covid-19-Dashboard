@@ -116,7 +116,7 @@ export default class Graphs extends Component {
             }}
           />
         </div>
-        <div style={{width: '100%'}}>
+        <div style={{width: '100%'}} className="graphs-container">
           <div className="chart chart-conformed">
             <p className="graph-name graph-conformed">Confirmed</p>
             <ResponsiveContainer width="100%" height={260}>

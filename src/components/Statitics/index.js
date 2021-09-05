@@ -13,7 +13,7 @@ class Statitics extends Component {
 
   getData = async () => {
     const {statesList} = this.props
-    const apiUrl = 'https://api.covid19india.org/v4/min/data.min.json'
+    const apiUrl = 'https://data.covid19india.org/v4/min/data.min.json'
 
     const options = {
       method: 'GET',

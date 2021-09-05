@@ -171,7 +171,7 @@ class StateData extends Component {
 
   getData = async () => {
     const {match} = this.props
-    const apiUrl = 'https://api.covid19india.org/v4/min/data.min.json'
+    const apiUrl = 'https://data.covid19india.org/v4/min/data.min.json'
     const {params} = match
     const {state} = params
 
@@ -248,7 +248,7 @@ class StateData extends Component {
     const {params} = match
     const {state} = params
     const obj1 = statesList.filter(each => each.state_name === state)
-    const api = `https://api.covid19india.org/v4/min/timeseries-${obj1[0].state_code}.min.json`
+    const api = `https://data.covid19india.org/v4/min/timeseries-${obj1[0].state_code}.min.json`
     const options = {
       method: 'GET',
     }

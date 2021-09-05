@@ -12,7 +12,7 @@ class About extends Component {
   }
 
   getData = async () => {
-    const apiUrl = 'https://api.covid19india.org/website_data.json'
+    const apiUrl = 'https://data.covid19india.org/website_data.json'
 
     const options = {
       method: 'GET',
